@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Formulario</title>
+        <link rel="stylesheet" type ="text/css" href="css/estilos.css">
+        <link rel="stylesheet" type ="text/css" href="css/estilosformulario.css">
+        <link rel="stylesheet" type ="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </head>
+    <body>
+        <header class="container-fluid">
+                <div class="row">
+                    <div class="top">
+                        <nav class="navbar navbar-expand-md">
+                            <a class="navbar-brand" href="#">  
+                                <img src="img/logo.png"  id="logo" alt="Logo Mis Perris"/>
+                            </a>
+                            <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+    
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index.html" title="inicio">inicio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">quienes somos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">servicios</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contactanos.html" title="formulario">contáctanos</a>
+                                    </li>
+                                </ul>	
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+        </header>
+
+        <section class="container">
+            <div class="row" id="contenido">            
+                <div class="informacion col-lg-12">
+                    <h2 class="info">Ingreso de Rescatados</h2>
+                </div>
+                <hr class="line-separator col-lg-12"/>
+            <div class="formulario col-lg-12">    
+                <form class="needs-validation" novalidate action="mantenedor.html" id="mantenedor">
+                    <div class="col-md-12">
+                        <table class="table dataTable no-footer"
+                            id="tabla_rescatados" role="grid"
+                            aria-describedby="tabla_rescatados">
+                            <thead>
+                                <tr role="row">
+                                    <th class="sorting_asc">Nombre</th>
+                                    <th class="sorting_asc">Raza</th>
+                                    <th>Acciones</th>
+                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr role="row">
+                                    <td>asdf</td>
+                                    <td>asfd</td>
+                                    <td class="text-align-center">
+                                    <a href="#" title="Editar" onclick=""><span class="fas fa-edit"></span></a>
+                                    <a href="#" class="text-danger" title="Eliminar" onclick=""><span class="fas fa-trash"></span></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                            </tfoot>
+                        </table>
+                        </div>
+                </form>
+                <div class="col-md-3">
+                    <button type="button" class="btn btn-primary btn-xs form-control btn-success" 
+                    data-toggle="modal" data-target="#editarRescatadoModal" onClick="">
+                        <span class="fas fa-plus"></span>
+                        <span class="font-gob">Nuevo Rescatado</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        </section>
+    
+        <footer id="credits">
+        <p>Desarrollo Web y Mobile</p>
+        </footer>
+        <!-- Modal de edicion -->
+        <form action="guardarRescatado" method="post" name="frmGuardarRescatado" id="frmGuardarRescatado">
+        <div class="modal fade" id="editarRescatadoModal" tabindex="-1" role="dialog"
+            aria-labelledby="lblEditarRescatadoModal" style="display: none;">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="lblEditarRescatadoModal">Rescatado</h4>
+                        <button type="button" class="close" data-dismiss="modal"
+                            aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body form-horizontal container-fluid">
+                        Aqui deberían ir los campos
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary" onclick="guardarRescatado();">
+                            <span class="fas fa-save"></span> Guardar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <input type="hidden" name="idEntidadEjecutora" id="idEjecutoraModal">
+    </form>
+
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready( function () {
+                $('#tabla_rescatados').DataTable({
+                    language:{
+                        "url":"https://cdn.datatables.net/plug-ins/1.10.19/i18n/Spanish.json"
+                    }
+                });
+            } );
+            function guardarRescatado(){
+                $("#frmGuardarRescatado")[0].submit();
+            }
+        </script>
+    </body>
+</html>
