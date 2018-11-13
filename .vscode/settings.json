@@ -1,0 +1,5 @@
+{
+    "python.pythonPath": "envperris\\Scripts\\python.exe",
+    "python.jediEnabled": false,
+    "python.linting.pylintEnabled": true
+}

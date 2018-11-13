@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Mis Perris</title>
+		<!--OWL Carrusel-->
+        <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+        <!--Fancybox-->
+        <link rel="stylesheet" href="fancybox/jquery.fancybox.min.css">
+        <!--Bootstrap-->
+        <link rel="stylesheet" type ="text/css" href="css/estilos.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </head>
+    <body>
+        <header class="container-fluid">
+            <div class="row">
+                <div class="top">
+                    <nav class="navbar navbar-expand-md">
+                        <a class="navbar-brand" href="#">  
+                            <img src="img/logo.png"  id="logo" alt="Logo Mis Perris"/>
+                        </a>
+                        <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html" title="inicio">inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">quienes somos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">servicios</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contactanos.html" title="formulario">contáctanos</a>
+                                </li>
+                            </ul>	
+                        </div>
+
+                        <a href="iniciarSesion.html" class="badge badge-dark">Iniciar Sesión</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <section class="container-fluid">
+            <div class="row">
+                <div class="owl-carousel owl-theme" id="carusel" >
+                    <div class="item1"><h4 class="text-carusel">"Toffe es el mejor compañero que he podido tener"</h4></div>
+                    <div class="item2"><h4 class="text-carusel">"Kaia ha venido a llenar los espacion vacios de mi vida"</h4></div>
+                    <div class="item3"><h4 class="text-carusel">"Darla es la guardiana y amiga de nuestro hijo"</h4></div>
+                    <div class="item4"><h4 class="text-carusel">"Estrella me a apoyado en todos los momentos"</h4></div>
+                    <div class="item5"><h4 class="text-carusel">"Voro trajo toda la alegría a nuestra familia"</h4></div>
+                    <div class="item6"><h4 class="text-carusel">"Ginger es la hermana perfecta para nuestro hijo"</h4></div>          
+                </div>
+                <footer>                    		
+                    <div id="address" class="d-none d-md-block col-xs-12 col-md-4 col-lg-4"> 
+                        <p>+ 56 9 98765431</p>
+                    </div>
+                    <div id="slogan" class="d-none d-md-block col-xs-12 col-md-4 col-lg-4">
+                        <p>Rescate y adopción de perros callejeros </p>
+                    </div>                    
+                    <div class="col-xs-12 col-md-4 col-lg-4" id="social">	
+                        <a class="nav-redes" href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>&nbsp;
+                        <a class="nav-redes" href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>&nbsp;
+                        <a class="nav-redes" href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>&nbsp;
+                        <a class="nav-redes" href=""><i class="fa fa-envelope" aria-hidden="true"></i></a>&nbsp;
+                    </div>
+                </footer>
+            </div>
+        </section>
+      
+       <div class="container-fluid" id="contenido">           
+			<div class="row">			
+				<article class="col-xs-12 col-md-6 col-lg-6" id="left">
+					<h2 class="titulo">RESCATE</h2>
+					<p class="subtitulo">Etapa Uno</p>
+					<hr>
+					<p class="descripcion">Rescatamos perros en situación de peligro y/o abandono. Los rehabilitamos y los preparamos para buscarles un hogar.</p>
+					<img src="img/rescate.jpg" alt="Perro Negro" id="imgperro">
+				</article>
+				<article class="col-xs-12 col-md-6 col-lg-6" id="right">
+					<img src="img/crowfunding.jpg" alt="platocomida" id="imgcrow">
+					<h2 class="titulo">CROWDFUNDING</h2>
+					<p class="subtitulo">Financiamiento</p>
+					<hr>
+					<p class="descripcion">Sigue nuestras redes sociales para informarte acerca de las diversas campañas y actividades que realizamos para obtener financiamiento para seguir ayudando.</p>
+					<button class="btn btn-primary btn-inline" type="button" name="button" id="boton">CAMPAÑAS</button>
+				</article>
+			</div>
+        </div>
+        
+        <div class="container-fluid" id="galeria">
+            <div class="row">
+                <div class="col-4 col-lg-4" id="img-left">
+                    <a class="d-block" data-fancybox="images" data-caption="Mi nombre es Tobías, tengo 2 años y soy muy juguetón y cariñoso; estoy vacunado, castrado y desparasitado. Adoptame escribiendo a la fundación." 
+                    id="img-text" href="img/1_b.jpg">
+                        <img class="img-fluid" src="img/1_s.jpg" alt="perro chico blanco" />
+                    </a>
+
+                    <a class="d-block" data-fancybox="images" data-caption="Mi nombre es Rocky, tengo 4 años y soy muy dócil y sociable; estoy vacunado, castrado y desparasitado. Adoptame escribiendo a la fundación." href="img/2_b.jpg">
+                        <img class="img-fluid" src="img/2_s.jpg" alt="perro ovejero"/>
+                    </a>
+
+                    <a class="d-block" data-fancybox="images" data-caption="Mi nombre es Lucas, tengo 4 años y soy muy regalón y cariñoso; estoy vacunado, castrado y desparasitado. Adoptame escribiendo a la fundación." href="img/3_b.jpg">
+                        <img class="img-fluid" src="img/3_s.jpg" alt="perro grande"/>
+                    </a>
+                </div>
+
+                <div class="col-4 col-lg-4" id="img-center">
+                    <a class="d-block" data-fancybox="images" data-caption="Mi nombre es Mia, tengo 2 años y soy muy juguetona y energética; estoy vacunada, esterilizada y desparasitada. Adoptame escribiendo a la fundación." href="img/4_b.jpg">
+                        <img class="img-fluid" src="img/4_s.jpg" alt="perro cafe" />
+                    </a>
+
+                    <a class="d-block" data-fancybox="images" data-caption="Mi nombre es Maya, tengo 1 año y soy muy obediente y sociable; estoy vacunada, esterilizada y desparasitada. Adoptame escribiendo a la fundación." href="img/5_b.jpg">
+                        <img class="img-fluid" src="img/5_s.jpg" alt="perro grande cafe" />
+                    </a>
+
+                    <a class="d-block" data-fancybox="images" data-caption="Mi nombre es Rocco, tengo 2 años y soy muy regalón y tranquilo; estoy vacunado, castrado y desparasitado. Adoptame escribiendo a la fundación." href="img/6_b.jpg">
+                        <img class="img-fluid" src="img/6_s.jpg" alt="perro chico blanco y negro"/>
+                    </a>
+                </div>
+
+                <div class="col-4 col-lg-4" id="img-right">
+                    <a class="d-block" data-fancybox="images" data-caption="Mi nombre es Duque, tengo 4 años y soy muy dócil y sociable; estoy vacunado, castrado y desparasitado. Adoptame escribiendo a la fundación." href="img/7_b.jpg">
+                        <img class="img-fluid" src="img/7_s.jpg" alt="perro grande negro"/>
+                    </a>
+
+                    <a class="d-block" data-fancybox="images" data-caption="Mi nombre es Candy, tengo 5 años y soy muy tranquila y regalona; estoy vacunada, esterilizada y desparasitada. Adoptame escribiendo a la fundación." href="img/8_b.jpg">
+                        <img class="img-fluid" src="img/8_s.jpg" alt="perro grande pelo corto"/>
+                    </a>
+
+                    <a class="d-block" data-fancybox="images" data-caption="Mi nombre es Eddy, tengo 2 años y soy muy juguetón y dócil; estoy vacunado, castrado y desparasitado. Adoptame escribiendo a la fundación." href="img/9_b.jpg">
+                        <img class="img-fluid" src="img/9_s.jpg" alt="perro chico manchas ojos"/>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        
+		<footer id="credits">
+			<p>Desarrollo Web y Mobile</p>
+        </footer>	
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <!--OWL Carrusel-->
+		<script src="owlcarousel/owl.carousel.min.js"></script>
+        <script src="js/jquery.js"></script>
+        <!--Fancybox-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="fancybox/jquery.fancybox.min.js"></script> 
+    </body>
+</html>

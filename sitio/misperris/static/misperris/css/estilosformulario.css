@@ -1,0 +1,72 @@
+#contenido{
+    width: 100%;
+    height: auto;
+    padding-top:120px; 
+    background-color: white;      
+}
+
+
+.info{
+    color: #6DCCAA;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight:bold;
+}
+
+.descripción{
+    font-size: 16px;
+    padding-top: 20px;    
+}
+
+#btnEnviar {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    color: inherit;
+    background: transparent;
+    border: 2px solid #333;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+   
+}
+  
+#btnEnviar:hover {
+    background-color: #FFCF3F;
+    border-color: #FFCF3F;
+    color: #FFF;
+}
+
+@media screen and (max-width: 575.98px){
+
+    #contenido{
+        padding-top:100px; 
+        margin:0px;
+     
+    }
+
+    .info{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .descripción{
+        font-size: 14px;
+        text-align: center;
+        padding-top: 10px;    
+    }
+
+    #formulario{
+        font-size: 16px;
+       
+    }
+   
+    #btnEnviar{
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+
+}
